@@ -23,7 +23,7 @@ echo " | $site_description";
 
 // Add a page number if necessary:
 if ( $paged >= 2 || $page >= 2 )
-echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
+echo ' | ' . sprintf( __( 'Page %s', 'cmcv' ), max( $paged, $page ) );
 
 ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -43,8 +43,8 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
      				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
           </hgroup>
           <nav role="navigation" class="site-navigation main-navigation">
-				    <h1 class="assistive-text"><?php _e( 'Menu', 'shape' ); ?></h1>
-				    <div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'shape' ); ?>"><?php _e( 'Skip to conten', 'shape' ); ?></a></div>
+				    <h1 class="assistive-text"><?php _e( 'Menu', 'cmcv' ); ?></h1>
+				    <div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'cmcv' ); ?>"><?php _e( 'Skip to content', 'cmcv' ); ?></a></div>
 				    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					</nav><!-- .site-navigation .main-navigation --><!-- .site-navigation .main-navigation -->
      </header><!-- #masthead .site-header -->
