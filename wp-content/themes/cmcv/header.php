@@ -19,10 +19,12 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="center">
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'cmcv' ); ?></button>
+<div class="header_wide_bg"></div>
+<div class="wrapper">
+	<?php add_my_widget(); ?>
+	<header>
+		<!-- Maybe logo here later -->
+		<nav class="menu_div">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
-
+	</header>

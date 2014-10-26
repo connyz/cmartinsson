@@ -2,13 +2,12 @@
 /**
  * The template for displaying 404 pages (not found).
  *
- * @package CMCV
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class="content_area">
+		<main class="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">

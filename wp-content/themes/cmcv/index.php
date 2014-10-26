@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-	<div class="wrapper">
+	<div class="content_area clearfix">
 		<div class="main">
 
 		<?php if ( have_posts() ) { ?>
@@ -35,7 +35,19 @@ get_header(); ?>
 		<?php } ?>
 
 		</div><!-- #main -->
-	</div><!-- #wrapper -->
+		<?php
+		/** * The sidebar containing the main widget area. */
 
-<?php get_sidebar(); //Kolla på denna rad sen ?>
+		if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+			return;
+		}
+		?>
+
+		<div class="right_widget_area">
+			<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		</div><!-- #right_widget_area -->
+
+	</div><!-- #content_area -->
+
 <?php get_footer(); ?>
+

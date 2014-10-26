@@ -9,7 +9,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
+	$content_width = 980; /* pixels */
 }
 
 if ( ! function_exists( 'cmcv_setup' ) ) :
@@ -85,8 +85,29 @@ function cmcv_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+	// Add a widget for header text
+	if (function_exists('register_sidebar')) {
+		register_sidebar(array(
+		'name' => 'Header widget',
+		'id' => 'extra-widget',
+		'description' => 'Widget area for header',
+		'before_widget' => '<div class="widget header_widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>'
+		));
+	}
 }
 add_action( 'widgets_init', 'cmcv_widgets_init' );
+
+// Place the widget before the header
+//add_filter ('__before_header', 'add_my_widget');
+function add_my_widget() {
+	if (function_exists('dynamic_sidebar')) {
+		dynamic_sidebar('Header widget');
+	}
+}
 
 /**
  * Enqueue scripts and styles.
@@ -105,5 +126,7 @@ function cmcv_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'cmcv_scripts' );
+
+
 
 

@@ -1,0 +1,89 @@
+
+/* Layout */
+.wrapper {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+p { font-size: 1em; }
+
+/* Header widget area styling */
+
+.header_wide_bg {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background-color: grey;
+	z-index: -50;
+}
+
+.header_widget {
+	height: 80px;
+	padding: 15px;
+}
+
+.menu_div {
+	background-color: #d1d1d1;
+}
+
+.header_widget h2 {
+	color: green;
+	display: inline-block;
+}
+
+.header_widget .textwidget {
+	display: inline-block;
+}
+
+.header_widget .textwidget p {
+	color: white;
+	margin-bottom: 0;
+}
+
+/* Header styling */
+
+.menu_div {
+	border: 1px solid black;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+
+/* Index styling */
+
+.content_area {
+	display: flex;
+}
+
+.main {
+	width: 66.6%;
+	float:left;
+	border: 1px solid black;
+}
+
+.right_widget_area {
+	width: 33.3%;
+	float: left;
+	border: 1px solid black;
+}
+
+
+/* Footer styling */
+
+.site-info {
+	text-align: center;
+}
