@@ -116,7 +116,7 @@ function cmcv_scripts() {
 	wp_enqueue_style( 'cmcv-style', get_stylesheet_uri() );
 	wp_enqueue_style('base', get_bloginfo('template_directory') . '/css/base.css', false, 1, 'screen');
 	wp_enqueue_style('responsive', get_bloginfo('template_directory') . '/css/responsive.css', false, 1, 'screen');
-
+	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800');
 	// Check usefulness later of these 2 scripts
 	wp_enqueue_script( 'cmcv-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'cmcv-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -126,7 +126,3 @@ function cmcv_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'cmcv_scripts' );
-
-
-
-

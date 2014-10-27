@@ -23,7 +23,6 @@
 <div class="wrapper">
 	<?php add_my_widget(); ?>
 	<header>
-		<!-- Maybe logo here later -->
 		<nav class="menu_div">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
