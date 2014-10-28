@@ -18,12 +18,15 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) { ?>
 
-			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) { the_post(); ?>
-
-				<?php
-					// Get content for the page
-					the_content();
+				<?php echo 'The post type is: ' . get_post_type( get_the_ID() ); ?>
+				<?php if (is_singular()) {
+					//if (){
+						//get_template_part( 'templates/page', 'home' );
+					//} else {
+						the_content();
+					//}
+				}
 				?>
 
 			<?php } ?>

@@ -23,7 +23,7 @@
 <div class="wrapper">
 	<?php add_my_widget(); ?>
 	<header>
-		<nav class="menu_div">
+		<nav class="menu_div box-shadow">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header>

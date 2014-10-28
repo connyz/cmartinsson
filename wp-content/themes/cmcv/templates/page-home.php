@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Home
+ * Template Name: Custom-front
  */
 
 get_header();
@@ -13,9 +13,7 @@ get_header();
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<h1><?php the_field('custom_title'); ?></h1>
-
-			<img src="<?php the_field('hero_image'); ?>" />
+			<?php echo "Template page-home"; ?>
 
 			<p><?php the_content(); ?></p>
 

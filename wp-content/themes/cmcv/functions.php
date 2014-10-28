@@ -82,8 +82,8 @@ function cmcv_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 
 	// Add a widget for header text
@@ -94,8 +94,8 @@ function cmcv_widgets_init() {
 		'description' => 'Widget area for header',
 		'before_widget' => '<div class="widget header_widget %2$s">',
 		'after_widget' => '</div>',
-		'before_title' => '<h2>',
-		'after_title' => '</h2>'
+		'before_title' => '<h1>',
+		'after_title' => '</h1>'
 		));
 	}
 }
@@ -117,6 +117,8 @@ function cmcv_scripts() {
 	wp_enqueue_style('base', get_bloginfo('template_directory') . '/css/base.css', false, 1, 'screen');
 	wp_enqueue_style('responsive', get_bloginfo('template_directory') . '/css/responsive.css', false, 1, 'screen');
 	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800');
+	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Raleway:400,500,700,600,800,900');
+
 	// Check usefulness later of these 2 scripts
 	wp_enqueue_script( 'cmcv-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'cmcv-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -126,3 +128,4 @@ function cmcv_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'cmcv_scripts' );
+require_once('inc/custom-post-types.php');
