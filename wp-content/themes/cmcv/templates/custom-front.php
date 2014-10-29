@@ -8,7 +8,7 @@ get_header();
 
 ?>
 
-	<div class="content_area clearfix">
+	<div class="content_area_custom clearfix">
 		<div class="custom_front">
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -55,6 +55,24 @@ get_header();
 			<?php }else{
 				echo ("<p>No text available.</p>");
 			} ?>
+			<!-- Social links -->
+			<p class="custom_field_p"><?php _e("Social links:", "cmcv")?></p>
+			<?php $front_fb_link = get_field( "facebook_link" );
+			if( $front_fb_link ){ ?>
+				<a class="facebook_link" href=<?php echo (the_field( "facebook_link" )) ?>></a>
+			<?php } ?>
+			<?php $front_tw_link = get_field( "twitter_link" );
+			if( $front_tw_link ){ ?>
+				<a class="twitter_link" href=<?php echo (the_field( "twitter_link" )) ?>></a>
+			<?php } ?>
+			<?php $front_li_link = get_field( "linkedin_link" );
+			if( $front_li_link ){ ?>
+				<a class="linkedin_link" href=<?php echo (the_field( "linkedin_link" )) ?>></a>
+			<?php } ?>
+			<?php $front_gp_link = get_field( "google+_link" );
+			if( $front_gp_link ){ ?>
+				<a class="googleplus_link" href=<?php echo (the_field( "google+_link" )) ?>></a>
+			<?php } ?>
 		</div>
 
 		<?php endwhile; // end of the loop. ?>
