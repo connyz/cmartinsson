@@ -84,6 +84,10 @@ header {
 	width: 979px;
 }
 
+.current-menu-item a {
+	color: #729C1E;
+}
+
 .menu_div {
 	/* Gradient backround */
 	background: rgba(255,255,255,1);
@@ -177,6 +181,26 @@ header {
 	border-radius: 2px;
 }
 
+/* custom-front template styling *****************/
+
+.custom_front {
+	width: 100%;
+	border: 1px solid #D1D1D1;
+	padding: 20px;
+	border-radius: 2px;
+}
+
+.custom_field_p {
+	color: #729C1E;
+}
+
+.custom_field_h1 {
+	color: #729C1E;
+}
+
+.custom_field_h2 {
+	color: #729C1E;
+}
 
 /* Footer styling *********************/
 
