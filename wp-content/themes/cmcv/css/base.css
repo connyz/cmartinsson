@@ -19,7 +19,7 @@ body {
 
 h1 { font-size: 2.875em; }
 h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
+h3 { font-size: 1.25em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 p { font-size: .8em; }
@@ -81,7 +81,7 @@ p { font-size: .8em; }
 /* Header styling ************************/
 
 header {
-	width: 979px;
+	width: 980px;
 }
 
 .current-menu-item a {
@@ -91,13 +91,13 @@ header {
 .menu_div {
 	/* Gradient backround */
 	background: rgba(255,255,255,1);
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 22%, rgba(237,237,237,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(22%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,1)));
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 22%, rgba(237,237,237,1) 100%);
-	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 22%, rgba(237,237,237,1) 100%);
-	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 22%, rgba(237,237,237,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 22%, rgba(237,237,237,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 44%, rgba(209,209,209,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(44%, rgba(255,255,255,1)), color-stop(100%, rgba(209,209,209,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 44%, rgba(209,209,209,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 44%, rgba(209,209,209,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 44%, rgba(209,209,209,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 44%, rgba(209,209,209,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1', GradientType=0 );
 }
 
 .menu {
@@ -121,7 +121,7 @@ header {
 /* Box shadows for menu bottom */
 .box-shadow{
 	height: 50px;
-	width: 979px;
+	width: 980px;
 	position: relative;
 	background-color: #FFFFFF;
 	border-width: 1px;
@@ -163,20 +163,19 @@ header {
 	display: flex;
 	background-color: #f8f8f8;
 	margin-top: 20px;
+	border: 1px solid #D1D1D1;
 }
 
 .main {
-	width: 66.6%;
+	width: 74.9%;
 	float:left;
-	border: 1px solid #D1D1D1;
 	padding: 20px;
 	border-radius: 2px;
 }
 
 .right_widget_area {
-	width: 33.3%;
+	width: 24.9%;
 	float: left;
-	border: 1px solid #D1D1D1;
 	padding: 20px;
 	border-radius: 2px;
 }
@@ -191,7 +190,7 @@ header {
 	color: #729C1E;
 }
 
-.custom_field_h2 {
+.custom_field_h3 {
 	color: #729C1E;
 }
 
@@ -213,6 +212,7 @@ header {
 	display: inline-block;
 	height: 100%;
 	width: 39%;
+	padding: 20px;
 }
 
 .custom_image img {
@@ -228,11 +228,59 @@ header {
 	width: 39%;
 }
 
+.custom_mid_texts p{
+	margin-bottom: 30px;
+}
+
+.custom_cv_link {
+	text-decoration: none;
+	color: #fff;
+	background-color: #729C1E;
+	font-weight: 400;
+	padding: 8px 17px;
+	z-index: 2;
+}
+
+/* Box shadow for CV link */
+.box-shadow-cvlink{
+    height: 40px;
+    width: 162px;
+    position: relative;
+    border-radius: 1px;
+}
+.box-shadow-cvlink:after{
+	content: "";
+	z-index: -1;
+	position: absolute;
+	width: 73%;
+	top: 12px;
+	right: 2px;
+	bottom: 13px;
+	border-radius: 0px;
+	-webkit-transform: rotate(6deg);
+	transform: rotate(6deg);
+	box-shadow: 0px 15px 10px #1A1A1A;
+}
+
+.custom_mid_texts h1 {
+	font-weight: 900;
+	margin-top: -19px;
+	margin-left: -3px;
+}
+
 .custom_info {
 	vertical-align: top;
 	display: inline-block;
 	padding: 20px;
 	width: 21%;
+}
+
+.custom_info p {
+	margin-bottom: 0;
+}
+
+.custom_info p:nth-child(even){
+	margin-bottom: 8px;
 }
 
 .facebook_link {
@@ -270,6 +318,20 @@ header {
 	background-repeat: no-repeat;
 	display: inline-block;
 }
+
+/* custom-cv template styling *****************/
+.content_area_cv {
+	display: flex;
+	margin-top: 20px;
+}
+
+.custom_cv {
+	width: 74.9%;
+	float:left;
+	padding: 20px;
+	border-radius: 2px;
+}
+
 /* Footer styling *********************/
 
 footer {

@@ -10,7 +10,6 @@ get_header();
 
 	<div class="content_area_custom clearfix">
 		<div class="custom_front">
-
 		<?php while ( have_posts() ) : the_post(); ?>
 		<!-- Image custom field -->
 		<div class="custom_image">
@@ -24,13 +23,14 @@ get_header();
 		<!-- Mid text custom fields -->
 		<div class="custom_mid_texts">
 			<h1 class="custom_field_h1"><?php _e("Hello!", "cmcv")?></h1>
-			<h2 class="custom_field_h2"><?php _e("Welcome to my Online Portfolio", "cmcv")?></h2>
+			<h3 class="custom_field_h3"><?php _e("Welcome to my Online Portfolio", "cmcv")?></h3>
 			<?php $frontpage_text = get_field( "frontpage_text" );
 			if( $frontpage_text ){ ?>
 				<p><?php the_field( "frontpage_text" ); ?></p>
 			<?php }else{
 				echo ("<h3>No text available.</h3>");
 			} ?>
+			<a class="custom_cv_link box-shadow-cvlink" href=<?php echo ("cv") ?>>Check out my CV</a>
 		</div>
 		<!-- Info custom fields -->
 		<div class="custom_info">

@@ -15,9 +15,7 @@ get_header(); ?>
 	<div class="content_area clearfix">
 		<div class="main">
 		<?php if ( have_posts() ) { ?>
-
 			<?php while ( have_posts() ) { the_post(); ?>
-				<?php echo 'The post type is: ' . get_post_type( get_the_ID() ); ?>
 				<?php if (is_singular()) { ?>
 							<?php	// Get content for singular page
 								the_content();
@@ -31,17 +29,7 @@ get_header(); ?>
 					 get_template_part( '404' ); ?>
 		<?php } ?>
 		</div><!-- #main -->
-		<?php
-		/** * The sidebar containing the main widget area. */
-		if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-			return;
-		}
-		?>
-
-		<div class="right_widget_area">
-			<?php dynamic_sidebar( 'sidebar-1' ); ?>
-		</div><!-- #right_widget_area -->
-
+		<?php cmcv_display_page_sidebar() ?>
 	</div><!-- #content_area -->
 
 <?php get_footer(); ?>

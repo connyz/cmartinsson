@@ -13,5 +13,4 @@
 					// Get content for the archive page
 					the_content();
 				?>
-
 		</div><!-- .archivepost -->
