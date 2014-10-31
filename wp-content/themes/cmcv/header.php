@@ -21,7 +21,7 @@
 <body <?php body_class(); ?>>
 <div class="header_wide_bg"></div>
 <div class="wrapper">
-	<?php add_my_widget(); ?>
+	<?php custom_top_widget(); ?>
 	<header>
 		<nav class="menu_div box-shadow">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>

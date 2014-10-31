@@ -238,34 +238,16 @@ header {
 	background-color: #729C1E;
 	font-weight: 400;
 	padding: 8px 17px;
-	z-index: 2;
-}
-
-/* Box shadow for CV link */
-.box-shadow-cvlink{
-    height: 40px;
-    width: 162px;
-    position: relative;
-    border-radius: 1px;
-}
-.box-shadow-cvlink:after{
-	content: "";
-	z-index: -1;
-	position: absolute;
-	width: 73%;
-	top: 12px;
-	right: 2px;
-	bottom: 13px;
-	border-radius: 0px;
-	-webkit-transform: rotate(6deg);
-	transform: rotate(6deg);
-	box-shadow: 0px 15px 10px #1A1A1A;
+	-webkit-box-shadow: 0px 5px 6px -2px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 5px 6px -2px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 5px 6px -2px rgba(50, 50, 50, 0.75);
 }
 
 .custom_mid_texts h1 {
 	font-weight: 900;
 	margin-top: -19px;
 	margin-left: -3px;
+	margin-bottom: -10px;
 }
 
 .custom_info {
@@ -320,6 +302,42 @@ header {
 }
 
 /* custom-cv template styling *****************/
+
+.custom_cv_headinfo {
+	width: 100%;
+	border: 1px solid #D1D1D1;
+	background-color: #f8f8f8;
+	margin-top: 20px;
+	height: 200px;
+}
+
+.custom_cv_contactinfo {
+	margin-left: 50px;
+	margin-top: 30px;
+	float: left;
+	padding: 20px;
+}
+
+.custom_cv_contactinfo h2 {
+	color: #679D3B;
+	margin-bottom: 10px;
+}
+
+.custom_cv_contactinfo p {
+	line-height: 0;
+}
+
+.custom_cv_image {
+	height: 100%;
+	float: right;
+}
+
+.custom_cv_image img{
+	height: 100%;
+	border-left: 1px solid #D1D1D1;
+	float: right;
+}
+
 .content_area_cv {
 	display: flex;
 	margin-top: 20px;
@@ -330,6 +348,19 @@ header {
 	float:left;
 	padding: 20px;
 	border-radius: 2px;
+}
+
+.sidebar_push {
+	margin-bottom: 30px;
+}
+
+.sidebar_push h3 {
+	color: #7BC43F;
+	margin-bottom: 10px;
+}
+
+.sidebar_push p {
+	line-height: 0;
 }
 
 /* Footer styling *********************/

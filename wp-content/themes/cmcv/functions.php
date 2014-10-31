@@ -104,7 +104,7 @@
 
 	// Place the widget before the header
 	//add_filter ('__before_header', 'add_my_widget');
-	function add_my_widget() {
+	function custom_top_widget() {
 		if (function_exists('dynamic_sidebar')) {
 			dynamic_sidebar('Header widget');
 		}

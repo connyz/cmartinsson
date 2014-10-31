@@ -48,7 +48,7 @@ get_header();
 			<?php }else{
 				echo ("<p>No text available.</p>");
 			} ?>
-			<p class="custom_field_p"><?php _e("Email:", "cmcv")?></p>
+			<p class="custom_field_p"><?php _e("E-mail:", "cmcv")?></p>
 			<?php $frontpage_text = get_field( "email" );
 			if( $frontpage_text ){ ?>
 				<p><?php the_field( "email" ); ?></p>
