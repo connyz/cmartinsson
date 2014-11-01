@@ -1,12 +1,12 @@
 <?php
 
 // Register Custom Post Type
-function cmcv_custom_front() {
+function cmcv_custom_projects() {
 
 	$labels = array(
-		'name'                => _x( 'Custom_fronts', 'Post Type General Name', 'cmcv' ),
-		'singular_name'       => _x( 'Custom_front', 'Post Type Singular Name', 'cmcv' ),
-		'menu_name'           => __( 'Custom_front', 'cmcv' ),
+		'name'                => _x( 'Custom_projects', 'Post Type General Name', 'cmcv' ),
+		'singular_name'       => _x( 'Custom_project', 'Post Type Singular Name', 'cmcv' ),
+		'menu_name'           => __( 'Custom_projects', 'cmcv' ),
 		'parent_item_colon'   => __( 'Parent Item:', 'cmcv' ),
 		'all_items'           => __( 'All Items', 'cmcv' ),
 		'view_item'           => __( 'View Item', 'cmcv' ),
@@ -17,6 +17,12 @@ function cmcv_custom_front() {
 		'search_items'        => __( 'Search Item', 'cmcv' ),
 		'not_found'           => __( 'Not found', 'cmcv' ),
 		'not_found_in_trash'  => __( 'Not found in Trash', 'cmcv' ),
+	);
+	$rewrite = array(
+		'slug'                => 'project',
+		'with_project'        => true,
+		'pages'               => true,
+		'feeds'               => true,
 	);
 	$args = array(
 		'labels'              => $labels,
@@ -35,12 +41,12 @@ function cmcv_custom_front() {
 		'rewrite'             => $rewrite,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'Custom_front', $args );
+	register_post_type( 'custom_project', $args );
 
 }
 
 // Hook into the 'init' action
-add_action( 'init', 'cmcv_custom_front', 0 );
+add_action( 'init', 'cmcv_custom_projects', 0 );
 
 /*
 // Register Custom Post Type
@@ -63,7 +69,7 @@ function ucs_custom_post_type() {
 	);
 	$rewrite = array(
 		'slug'                => 'project',
-		'with_front'          => true,
+		'with_project'          => true,
 		'pages'               => true,
 		'feeds'               => true,
 	);

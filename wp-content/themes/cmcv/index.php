@@ -16,12 +16,17 @@ get_header(); ?>
 		<div class="main">
 		<?php if ( have_posts() ) { ?>
 			<?php while ( have_posts() ) { the_post(); ?>
-				<?php if (is_singular()) { ?>
-							<?php	// Get content for singular page
-								the_content();
-							// Else get template for archive page ?>
-							<?php } else { ?>
-								<?php get_template_part( 'templates/archive'); ?>
+				<?php if (is_singular("custom_project")) { ?>
+					<?php	// Get content for singular project page
+					the_post_thumbnail("medium");
+						the_content();
+						//<?php get_template_part( 'templates/single-custom_project.php');   <------------------ ??????
+						// Else get content for ordinary page ?>
+				<?php } elseif(is_singular()) { ?>
+					<?php	the_content();
+					// Else get template for archive page ?>
+				<?php } else { ?>
+					<?php get_template_part( 'templates/archive'); ?>
 				<?php } ?>
 			<?php } // While ends here ?>
 		<?php }else{ ?>

@@ -6,11 +6,12 @@
  *
  */
 ?>
-		<div class="archive_post">
 
-				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<?php
-					// Get content for the archive page
-					the_content();
-				?>
-		</div><!-- .archivepost -->
+<div class="archive_post">
+
+		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+		<?php
+			// Get content for the archive page
+			the_content();
+		?>
+</div><!-- .archivepost -->
