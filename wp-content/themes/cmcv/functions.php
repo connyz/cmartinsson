@@ -148,14 +148,18 @@
 	  $start = '<div class="right_widget_area">';
 	  $end = '</div>';
 	  $isCustom = is_page_template("templates/custom-cv.php");
+	  $isContactPage = ("Custom_projects");
 
 	  if (is_singular()){
 	  	if ($isCustom){
 		    echo $start;
 		      cmcv_custom_push_loop();
 		    echo $end;
-	  	}else{
-	  		if (is_active_sidebar('sidebar-1')) {
+	  	}elseif(is_single()){
+	  		//If single project page, display nothing
+	   	}else{
+	   		// Display widget sidebar if standard page
+	   		if (is_active_sidebar('sidebar-1')) {
 	        echo $start;
 	          dynamic_sidebar('sidebar-1');
 	        echo $end;
