@@ -77,7 +77,42 @@ get_header();
 
 		<?php endwhile; // end of the loop. ?>
 
-	</div><!-- .main -->
+	</div><!-- .custom_front -->
 </div><!-- .content_area -->
+<div class="front_lower_container">
+	<div class="lower_info_section">
+		<h3 class="front_cont_h3"><?php _e("Favorite quote:", "cmcv")?></h3>
+		<?php $front_lower_text = get_field( "favorite_quote" );
+			if( $front_lower_text ){ ?>
+				<p><?php the_field( "favorite_quote" ); ?></p>
+			<?php }else{
+				echo ("<p>No text available.</p>");
+			} ?>
+	</div>
+	<div class="lower_info_section lower_mid_section">
+		<h3 class="front_cont_h3"><?php _e("Testimonial:", "cmcv")?></h3>
+		<?php $front_lower_text = get_field( "testimonial" );
+			if( $front_lower_text ){ ?>
+				<p><?php the_field( "testimonial" ); ?></p>
+			<?php }else{
+				echo ("<p>No text available.</p>");
+			} ?>
+	</div>
+	<div class="lower_info_section">
+		<h3 class="front_cont_h3"><?php _e("Recent project:", "cmcv")?></h3>
+		<?php $img = get_field( "recent_project_text" );
+			if( $front_lower_text ){ ?>
+					<p><?php the_field( "recent_project_text" ); ?></p>
+				<?php }else{
+					echo ("<p>No text available.</p>");
+			} ?>
+		<?php $front_lower_text = get_field( "recent_project_link" );
+			if( $front_lower_text ){ ?>
+				<p><?php _e("Follow this ", "cmcv")?><a class="recent_proj_link" href=<?php echo (the_field( "recent_project_link" )) ?>><?php _e("link", "cmcv")?></a><?php _e(" to read more.", "cmcv")?>
+			<?php }else{
+				echo ("<p>No link found.</p>");
+			} ?>
+	</div>
+</div>
 
 <?php get_footer(); ?>

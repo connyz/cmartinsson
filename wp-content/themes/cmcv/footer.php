@@ -9,9 +9,8 @@
 ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'cmcv' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'cmcv' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'cmcv' ), 'CMCV', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<?php printf( __( 'Conny Martinsson © 2014 | All rights reserved | ', 'cmcv' )); ?>
+			<a class="footer_link" href=<?php echo ("contact") ?>>Contact Info</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #wrapper-->
