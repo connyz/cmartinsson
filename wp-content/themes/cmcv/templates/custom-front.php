@@ -84,7 +84,7 @@ get_header();
 		<h3 class="front_cont_h3"><?php _e("Favorite quote:", "cmcv")?></h3>
 		<?php $front_lower_text = get_field( "favorite_quote" );
 			if( $front_lower_text ){ ?>
-				<p><?php the_field( "favorite_quote" ); ?></p>
+				<?php the_field( "favorite_quote" ); ?>
 			<?php }else{
 				echo ("<p>No text available.</p>");
 			} ?>
@@ -93,7 +93,7 @@ get_header();
 		<h3 class="front_cont_h3"><?php _e("Testimonial:", "cmcv")?></h3>
 		<?php $front_lower_text = get_field( "testimonial" );
 			if( $front_lower_text ){ ?>
-				<p><?php the_field( "testimonial" ); ?></p>
+				<?php the_field( "testimonial" ); ?>
 			<?php }else{
 				echo ("<p>No text available.</p>");
 			} ?>
