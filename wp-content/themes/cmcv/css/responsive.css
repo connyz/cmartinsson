@@ -6,6 +6,19 @@
 		width: 100%;
 	}
 
+	.custom_front {
+		margin-left: 3px;
+		text-align: center;
+	}
+
+	.custom_mid_texts {
+		text-align: left;
+	}
+
+	.custom_info {
+		text-align: left;
+	}
+
 	header {
 		width: 100%;
 	}
@@ -31,3 +44,22 @@
 	}
 
 }
+
+@media (max-width:888px) {
+
+/*	.custom_front > * {
+    vertical-align: middle;
+	} */
+
+	.custom_image {
+		padding: 0;
+		margin-right: 40px;
+	}
+
+
+}
+
+/* Temp code here
+
+
+*/
