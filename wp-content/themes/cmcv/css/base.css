@@ -28,6 +28,7 @@ p { font-size: .8em; }
 
 .header_wide_bg {
 	position: absolute;
+	min-width: 980px;
 	width: 100%;
 	height: 125px;
 	z-index: -50;
@@ -171,6 +172,10 @@ header {
 	float:left;
 	padding: 20px;
 	border-radius: 2px;
+}
+
+.main h2 {
+	margin-bottom: 0.5em;
 }
 
 .right_widget_area {
