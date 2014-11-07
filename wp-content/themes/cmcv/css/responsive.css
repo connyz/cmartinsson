@@ -78,6 +78,8 @@
 	.custom_info {
 		width: 100%;
 		text-align: center;
+		border-bottom: 1px solid #D1D1D1;
+		border-top: 1px solid #D1D1D1;
 	}
 
 	.custom_info_section {
@@ -86,18 +88,6 @@
 
 	.custom_info p {
 		display: inline-block;
-	}
-
-	.custom_info p:nth-child(n+5) {
-
-	}
-
-	.custom_info p:nth-child(odd) {
-
-	}
-
-	.custom_info p:nth-child(even) {
-
 	}
 
 	.facebook_link, .googleplus_link, .linkedin_link, .twitter_link {
@@ -114,10 +104,72 @@
 		display: none;
 	}
 
-	footer {
+}
+
+/****************** for 733px or less ******************/
+@media (max-width:733px) {
+
+	.custom_image {
+		display: block;
+		margin-top: 20px;
+		margin-right: auto;
+		margin-left: auto;
+		width: 52%;
+		height: auto;
+		margin-bottom: 15px;
+	}
+
+	.custom_mid_texts {
+		display: block;
+		width: 75%;
+		margin-right: auto;
+		margin-left: auto;
 
 	}
 
+}
+
+/****************** for 585px or less ******************/
+@media (max-width:585px) {
+	.header_widget h1 {
+		display: block;
+		margin-top: -4px;
+		font-size: 33px;
+	}
+
+	.header_widget .textwidget p {
+		margin-left: 0;
+	}
+
+	.header_widget {
+		text-align: center;
+	}
+}
+
+/****************** for 535px or less ******************/
+@media (max-width:535px) {
+
+	.custom_mid_texts {
+		width: 100%;
+	}
+
+	.custom_info_section {
+		display: block;
+	}
+
+	.lower_info_section {
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/****************** for 328px or less ******************/
+@media (max-width:360px) {
+	.header_widget h1 {
+		font-size: 20px;
+	}
 }
 
 /* Temp code here
@@ -125,5 +177,7 @@
 	****************** for 888px or less ******************
  @ media (max-width:888px) {
 	vertical-align: middle;
-
+.textwidget.textwidget.textwidget {
+		display: none;
+	}
 */
