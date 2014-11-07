@@ -1,4 +1,4 @@
-/* for 1000px or less */
+/****************** for 1000px or less ******************/
 @media (max-width:1000px) {
 
 	/*************** Header, menu and shadow responsiveness *************/
@@ -24,6 +24,7 @@
 	}
 
 	.box-shadow {
+		width: 100%;
 		-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.42);
 		-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.42);
 		box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.42);
@@ -45,21 +46,84 @@
 
 }
 
-@media (max-width:888px) {
+/****************** for 910px or less ******************/
+@media (max-width:967px) {
 
-/*	.custom_front > * {
-    vertical-align: middle;
-	} */
+	.custom_front {
+		border: 0;
+	}
+
+	.front_lower_container {
+		margin-top: 25px;
+	}
+
+	.lower_info_section {
+		width: 40%;
+	}
+
+	.lower_info_section:nth-of-type(1) {
+		display: none;
+	}
+
+	.lower_mid_section {
+		border-left: 0;
+		border-right: 0;
+	}
+
+	.content_area_custom {
+		background-color: #fff;
+		border-bottom: #D1D1D1;
+	}
+
+	.custom_info {
+		width: 100%;
+		text-align: center;
+	}
+
+	.custom_info_section {
+		display: inline-block;
+	}
+
+	.custom_info p {
+		display: inline-block;
+	}
+
+	.custom_info p:nth-child(n+5) {
+
+	}
+
+	.custom_info p:nth-child(odd) {
+
+	}
+
+	.custom_info p:nth-child(even) {
+
+	}
+
+	.facebook_link, .googleplus_link, .linkedin_link, .twitter_link {
+		vertical-align: middle;
+	}
 
 	.custom_image {
 		padding: 0;
+		margin-top: 20px;
 		margin-right: 40px;
 	}
 
+	.custom_cv_link {
+		display: none;
+	}
+
+	footer {
+
+	}
 
 }
 
 /* Temp code here
 
+	****************** for 888px or less ******************
+ @ media (max-width:888px) {
+	vertical-align: middle;
 
 */
