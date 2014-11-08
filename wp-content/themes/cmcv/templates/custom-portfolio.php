@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="content_area_custom clearfix">
+<div class="content_area_custom_portfolio clearfix">
 
 		<?php
 			global $post;

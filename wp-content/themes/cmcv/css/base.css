@@ -371,13 +371,18 @@ header {
 
 /* custom-portfolio template styling *****************/
 
+.content_area_custom_portfolio {
+	display: flex;
+	margin-top: 20px;
+}
+
 .projects_container {
 	width: 100%;
+	text-align: center;
 }
 
 .project_portfolio_thumb {
 	display: inline-block;
-	text-align: center;
 	width: 33%;
 	border: 1px solid #D1D1D1;
 	background-color: #f8f8f8;

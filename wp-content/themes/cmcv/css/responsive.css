@@ -134,6 +134,21 @@
 
 }
 
+/****************** for 680px or less ******************/
+@media (max-width: 680px) {
+	.projects_container {
+		height: 100%;
+	}
+
+	.project_portfolio_thumb {
+		display: block;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
 /****************** for 585px or less ******************/
 @media (max-width:585px) {
 	.header_widget h1 {
@@ -195,11 +210,17 @@
 
 }
 
-/****************** for 328px or less ******************/
+/****************** for 360px or less ******************/
 @media (max-width:360px) {
+
 	.header_widget h1 {
 		font-size: 20px;
 	}
+
+	.single_project_div {
+		width: 100%;
+	}
+
 }
 
 /* Temp code here
