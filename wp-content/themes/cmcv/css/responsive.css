@@ -242,10 +242,28 @@
 
 }
 
-/* Temp code here
+/****************** Custom CSS for craptastic IE10&11 ******************/
 
-	****************** for 888px or less ******************
- @ media (max-width:888px) {
+/* Make frontpage decent.. */
+@media (min-width: 734px) and (max-width: 967px) { _:-ms-input-placeholder, .front_lower_container{
+	margin-top: 80px;
+}}
 
-	}
-*/
+@media (min-width: 734px) and (max-width: 967px) { _:-ms-input-placeholder, .custom_front{
+	height: 388px;
+}}
+
+/* To get functioning contactpage.. */
+@media (max-width: 2000px) { _:-ms-input-placeholder, .content_area{
+	display: block;
+	text-align: center;
+}}
+
+@media (max-width: 2000px) { _:-ms-input-placeholder, .wpcf7.wpcf7{
+	margin: 0;
+	float: none;
+}}
+
+@media (max-width: 2000px) { _:-ms-input-placeholder, .right_widget_area{
+	float: none;
+}}

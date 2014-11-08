@@ -149,6 +149,11 @@
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
+
+		/*  Add stylesheet if IE9 browser and below	*/
+		wp_register_style( 'IE', get_stylesheet_directory_uri() . '/css/ie-responsiveness.css'  );
+		$GLOBALS['wp_styles']->add_data( 'IE', 'conditional', 'IE' );
+		wp_enqueue_style( 'IE' );
 	}
 	add_action( 'wp_enqueue_scripts', 'cmcv_scripts' );
 	require_once('inc/custom-post-types.php');
