@@ -8,14 +8,14 @@ get_header();
 
 ?>
 
-	<div class="content_area_custom clearfix">
-		<div class="custom_front">
+<div class="content_area_custom clearfix">
+	<div class="custom_front">
 		<?php while ( have_posts() ) : the_post(); ?>
 		<!-- Image custom field -->
 		<div class="custom_image">
 			<?php $img = get_field( "frontpage_image" );
 			if( !empty($img) ){ ?>
-				<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" />
+				<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
 			<?php }else{
 				echo ("<h2>No image available.</h2>");
 			} ?>
@@ -80,13 +80,14 @@ get_header();
 				if( $front_gp_link ){ ?>
 					<a class="googleplus_link" href=<?php echo (the_field( "google+_link" )) ?>></a>
 				<?php } ?>
-			<div>
+			</div>
 		</div>
 
 		<?php endwhile; // end of the loop. ?>
 
 	</div><!-- .custom_front -->
 </div><!-- .content_area -->
+
 <div class="front_lower_container">
 	<div class="lower_info_section">
 		<h3 class="front_cont_h3"><?php _e("Favorite quote:", "cmcv")?></h3>
@@ -108,7 +109,7 @@ get_header();
 	</div>
 	<div class="lower_info_section">
 		<h3 class="front_cont_h3"><?php _e("Recent project:", "cmcv")?></h3>
-		<?php $img = get_field( "recent_project_text" );
+		<?php $front_lower_text = get_field( "recent_project_text" );
 			if( $front_lower_text ){ ?>
 					<p><?php the_field( "recent_project_text" ); ?></p>
 				<?php }else{

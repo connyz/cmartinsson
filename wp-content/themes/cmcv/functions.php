@@ -12,6 +12,28 @@
 		$content_width = 980; /* pixels */
 	}
 
+	  /**
+   *
+   * toolbox_title_tag()
+   *
+   * A function to generate decent page titles. Based
+   * on the one in twentyeleven.
+   *
+   **/
+
+  function toolbox_title_tag() {
+    global $page, $paged;
+    $output = wp_title('|', false, 'right');
+    $output .= get_bloginfo('name');
+
+    $site_description = get_bloginfo( 'description', 'display' );
+    if($site_description && (is_home() || is_front_page())) {
+      $output .= ' | ' . $site_description;
+    }
+
+    echo $output;
+  }
+
 	if ( ! function_exists( 'cmcv_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -148,7 +170,6 @@
 	  $start = '<div class="right_widget_area">';
 	  $end = '</div>';
 	  $isCustom = is_page_template("templates/custom-cv.php");
-	  $isContactPage = ("Custom_projects");
 
 	  if (is_singular()){
 	  	if ($isCustom){
