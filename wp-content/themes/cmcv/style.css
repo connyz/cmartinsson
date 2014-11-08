@@ -83,6 +83,7 @@ html {
 }
 
 body {
+	overflow-x: hidden;
 	background: #fff; /* Fallback for when there is no custom background color defined. */
 }
 

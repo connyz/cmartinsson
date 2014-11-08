@@ -136,6 +136,16 @@
 
 /****************** for 680px or less ******************/
 @media (max-width: 680px) {
+
+	.content_area {
+		display: block;
+		text-align: center;
+	}
+
+	.right_widget_area {
+		float: none;
+	}
+
 	.projects_container {
 		height: 100%;
 	}
@@ -145,6 +155,11 @@
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.wpcf7.wpcf7 {
+		float: none;
+		margin-right: 0;
 	}
 
 }
@@ -212,6 +227,10 @@
 
 /****************** for 360px or less ******************/
 @media (max-width:360px) {
+
+	input, textarea {
+		width: 100%;
+	}
 
 	.header_widget h1 {
 		font-size: 20px;
