@@ -46,15 +46,16 @@
 
 }
 
-/****************** for 910px or less ******************/
+/****************** for 967px or less ******************/
 @media (max-width:967px) {
 
 	.custom_front {
 		border: 0;
+		height: 100%;
 	}
 
 	.front_lower_container {
-		margin-top: 25px;
+		margin-top: 0;
 	}
 
 	.lower_info_section {
@@ -73,6 +74,7 @@
 	.content_area_custom {
 		background-color: #fff;
 		border-bottom: #D1D1D1;
+		margin-top: 0;
 	}
 
 	.custom_info {
@@ -95,8 +97,7 @@
 	}
 
 	.custom_image {
-		padding: 0;
-		margin-top: 20px;
+		padding: 20px;
 		margin-right: 40px;
 	}
 
@@ -125,6 +126,10 @@
 		margin-right: auto;
 		margin-left: auto;
 
+	}
+
+	.custom_info {
+		margin-top: 0;
 	}
 
 }
@@ -163,6 +168,31 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	/******** cv page styling ********/
+
+	.custom_cv_image {
+		display: none;
+	}
+
+	.custom_cv_contactinfo {
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.content_area_cv {
+		display: block;
+	}
+
+	.custom_cv {
+		width: 100%;
+	}
+
+	.right_widget_area {
+		width: 100%;
+	}
+
 }
 
 /****************** for 328px or less ******************/
@@ -176,8 +206,6 @@
 
 	****************** for 888px or less ******************
  @ media (max-width:888px) {
-	vertical-align: middle;
-.textwidget.textwidget.textwidget {
-		display: none;
+
 	}
 */
