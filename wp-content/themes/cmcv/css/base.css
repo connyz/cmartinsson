@@ -62,6 +62,10 @@ p { font-size: .8em; }
 	text-decoration: none;
 }
 
+.header_widget a {
+	text-decoration: none;
+}
+
 .header_widget h1 {
 	color: #7BC43F;
 	display: inline-block;
