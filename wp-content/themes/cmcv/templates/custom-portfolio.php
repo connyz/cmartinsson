@@ -21,7 +21,7 @@
       <div class="projects_container">
 			<?php	while ($my_query->have_posts()) : $my_query->the_post(); ?>
           <div class="project_portfolio_thumb">
-  					<?php echo get_the_post_thumbnail( $page->ID, 'thumbnail' ); ?>
+            <a href="<?php the_permalink() ?>"><?php echo get_the_post_thumbnail( $page->ID, 'thumbnail' ); ?></a>
   					<p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
           </div>
 				<?php

@@ -184,6 +184,10 @@
 /****************** for 535px or less ******************/
 @media (max-width:535px) {
 
+	.custom_image {
+		width: 70%;
+	}
+
 	.custom_mid_texts {
 		width: 100%;
 	}
@@ -252,6 +256,7 @@
 @media (min-width: 734px) and (max-width: 967px) { _:-ms-input-placeholder, .custom_front{
 	height: 388px;
 }}
+/* frontstuff end */
 
 /* To get functioning contactpage.. */
 @media (max-width: 2000px) { _:-ms-input-placeholder, .content_area{
@@ -267,3 +272,4 @@
 @media (max-width: 2000px) { _:-ms-input-placeholder, .right_widget_area{
 	float: none;
 }}
+/* contactpagestuff end */

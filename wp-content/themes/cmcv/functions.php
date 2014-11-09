@@ -109,6 +109,7 @@
 			'after_title'   => '</h3>',
 		) );
 
+		$url = home_url();
 		// Add a widget for header text
 		if (function_exists('register_sidebar')) {
 			register_sidebar(array(
@@ -117,8 +118,8 @@
 			'description' => 'Widget area for header',
 			'before_widget' => '<div class="widget header_widget %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h1>',
-			'after_title' => '</h1>'
+			'before_title' => '<a href="'.$url.'"><h1>',
+			'after_title' => '</h1></a>'
 			));
 		}
 	}
