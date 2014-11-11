@@ -9,8 +9,11 @@
 ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php printf( __( 'Conny Martinsson © 2014 | All rights reserved | ', 'cmcv' )); ?>
-			<a class="footer_link" href=<?php echo ("contact") ?>>Contact Info</a>
+
+			<?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>
+				<?php dynamic_sidebar('footer-widget-area'); ?>
+			<?php endif; ?>
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #wrapper-->

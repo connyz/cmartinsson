@@ -111,17 +111,24 @@
 
 		$url = home_url();
 		// Add a widget for header text
-		if (function_exists('register_sidebar')) {
-			register_sidebar(array(
+		register_sidebar(array(
 			'name' => 'Header widget',
 			'id' => 'extra-widget',
 			'description' => 'Widget area for header',
 			'before_widget' => '<div class="widget header_widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<a href="'.$url.'"><h1>',
-			'after_title' => '</h1></a>'
-			));
-		}
+			'after_title' => '</h1></a>')
+		);
+
+		// Footer widget area
+		register_sidebar(array(
+      'name' => 'Footer widget area',
+      'description' => 'Widget area for footer',
+      'id' => 'footer-widget-area',
+      'before_widget' => '<div id="%1$s" class="widget_footer %2$s">',
+      'after_widget'  => '</div>')
+    );
 	}
 	add_action( 'widgets_init', 'cmcv_widgets_init' );
 

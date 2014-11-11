@@ -30,6 +30,6 @@
       </div>
 			<?php wp_reset_postdata();  // Restore global post data stomped by the_post(). ?>
 
-</div><!-- .content_area_custom -->
+</div><!-- .content_area_custom_portfolio -->
 
 <?php get_footer(); ?>
